@@ -1,0 +1,301 @@
+{
+  "projects": [
+    {
+      "id": "alien-orb",
+      "name": "Alien Orb",
+      "description": "Custom shader with Perlin noise creating an otherworldly orb effect",
+      "category": "Three.js Shaders",
+      "tags": ["shader", "perlin-noise", "webgl", "glsl"],
+      "path": "/projects/alien-orb/",
+      "icon": "sparkles",
+      "featured": true
+    },
+    {
+      "id": "basic-physics-simulation",
+      "name": "Basic Physics Simulation",
+      "description": "Interactive physics simulation with collision detection and sound effects",
+      "category": "Three.js Simulations",
+      "tags": ["physics", "cannon.js", "simulation", "3d"],
+      "path": "/projects/basic-physics-simulation/",
+      "icon": "atom",
+      "featured": true
+    },
+    {
+      "id": "bouncing-ball",
+      "name": "Bouncing Ball",
+      "description": "Simple ball animation demonstrating Three.js basics with shadows",
+      "category": "Three.js Animations",
+      "tags": ["animation", "shadows", "3d", "basic"],
+      "path": "/projects/bouncing-ball/",
+      "icon": "play",
+      "featured": false
+    },
+    {
+      "id": "door",
+      "name": "Animated Door",
+      "description": "Realistic animated door with detailed textures and lighting",
+      "category": "Three.js Simulations",
+      "tags": ["animation", "textures", "lighting", "realistic"],
+      "path": "/projects/door/",
+      "icon": "door",
+      "featured": false
+    },
+    {
+      "id": "fox",
+      "name": "3D Fox Model",
+      "description": "GLTF/GLB model viewer showcasing a 3D fox with environment mapping",
+      "category": "Three.js Models",
+      "tags": ["gltf", "model-viewer", "3d-models", "hdr"],
+      "path": "/projects/fox/",
+      "icon": "fox",
+      "featured": true
+    },
+    {
+      "id": "galaxy",
+      "name": "Galaxy Animation",
+      "description": "Procedurally generated galaxy with particle system",
+      "category": "Three.js Animations",
+      "tags": ["particles", "galaxy", "procedural", "space"],
+      "path": "/projects/galaxy/",
+      "icon": "galaxy",
+      "featured": true
+    },
+    {
+      "id": "galaxy_v2",
+      "name": "Galaxy Animation V2",
+      "description": "Enhanced version of galaxy animation with improved visuals",
+      "category": "Three.js Animations",
+      "tags": ["particles", "galaxy", "procedural", "space"],
+      "path": "/projects/galaxy_v2/",
+      "icon": "galaxy",
+      "featured": true
+    },
+    {
+      "id": "haunted-house",
+      "name": "Haunted House",
+      "description": "Spooky 3D scene demonstrating fundamental Three.js features",
+      "category": "Three.js Simulations",
+      "tags": ["scene", "lighting", "textures", "3d"],
+      "path": "/projects/haunted-house/",
+      "icon": "house",
+      "featured": false
+    },
+    {
+      "id": "hypercube",
+      "name": "Hypercube",
+      "description": "4D hypercube visualization in 3D space",
+      "category": "Three.js Models",
+      "tags": ["geometry", "4d", "mathematics", "visualization"],
+      "path": "/projects/hypercube/",
+      "icon": "cube",
+      "featured": true
+    },
+    {
+      "id": "jenga",
+      "name": "Jenga Game",
+      "description": "Interactive Jenga game with realistic physics and sound",
+      "category": "Three.js Simulations",
+      "tags": ["game", "physics", "interactive", "cannon.js"],
+      "path": "/projects/jenga/",
+      "icon": "game",
+      "featured": true
+    },
+    {
+      "id": "name-showcase",
+      "name": "Name Showcase",
+      "description": "Simple 3D text showcase with custom fonts",
+      "category": "Three.js Models",
+      "tags": ["text", "3d-text", "fonts", "showcase"],
+      "path": "/projects/name-showcase/",
+      "icon": "text",
+      "featured": false
+    },
+    {
+      "id": "particle-wave",
+      "name": "Particle Wave",
+      "description": "Mesmerizing particle wave animation",
+      "category": "Three.js Animations",
+      "tags": ["particles", "wave", "animation", "shader"],
+      "path": "/projects/particle-wave/",
+      "icon": "wave",
+      "featured": true
+    },
+    {
+      "id": "portfolio",
+      "name": "3D Portfolio",
+      "description": "Interactive 3D portfolio showcase with multiple models",
+      "category": "Three.js Models",
+      "tags": ["portfolio", "3d-models", "interactive", "showcase"],
+      "path": "/projects/portfolio/",
+      "icon": "briefcase",
+      "featured": true
+    },
+    {
+      "id": "raging-sea",
+      "name": "Raging Sea",
+      "description": "Realistic ocean waves with custom shaders",
+      "category": "Three.js Animations",
+      "tags": ["shader", "ocean", "waves", "realistic"],
+      "path": "/projects/raging-sea/",
+      "icon": "water",
+      "featured": true
+    },
+    {
+      "id": "redbox",
+      "name": "Red Box Animation",
+      "description": "Basic animation demonstrating Three.js fundamentals",
+      "category": "Three.js Animations",
+      "tags": ["animation", "basic", "tutorial", "3d"],
+      "path": "/projects/redbox/",
+      "icon": "box",
+      "featured": false
+    },
+    {
+      "id": "scroll-based-animation",
+      "name": "Scroll-Based Animation",
+      "description": "3D animation controlled by scroll position",
+      "category": "Three.js Animations",
+      "tags": ["scroll", "animation", "interactive", "ui"],
+      "path": "/projects/scroll-based-animation/",
+      "icon": "scroll",
+      "featured": true
+    },
+    {
+      "id": "simple-scene",
+      "name": "Simple Scene",
+      "description": "Basic Three.js scene starter template",
+      "category": "Three.js Models",
+      "tags": ["basic", "scene", "starter", "template"],
+      "path": "/projects/simple-scene/",
+      "icon": "scene",
+      "featured": false
+    },
+    {
+      "id": "village_temple_splat",
+      "name": "Village Temple (Gaussian Splat)",
+      "description": "React Three Fiber project with Gaussian splatting technology",
+      "category": "Three.js Models",
+      "tags": ["react", "r3f", "gaussian-splat", "advanced"],
+      "path": "/projects/village_temple_splat/",
+      "icon": "temple",
+      "featured": true
+    },
+    {
+      "id": "calculator",
+      "name": "Calculator",
+      "description": "Simple vanilla JavaScript calculator",
+      "category": "Web Apps",
+      "tags": ["javascript", "calculator", "vanilla-js", "basic"],
+      "path": "/projects/calculator/",
+      "icon": "calculator",
+      "featured": false
+    },
+    {
+      "id": "etch_a_sketch",
+      "name": "Etch-A-Sketch",
+      "description": "Interactive drawing app inspired by Etch-A-Sketch",
+      "category": "Web Apps",
+      "tags": ["javascript", "drawing", "interactive", "game"],
+      "path": "/projects/etch_a_sketch/",
+      "icon": "pencil",
+      "featured": false
+    },
+    {
+      "id": "rock_paper_scissor",
+      "name": "Rock Paper Scissors",
+      "description": "Classic rock paper scissors game",
+      "category": "Web Apps",
+      "tags": ["javascript", "game", "interactive", "vanilla-js"],
+      "path": "/projects/rock_paper_scissor/",
+      "icon": "hand",
+      "featured": false
+    },
+    {
+      "id": "rock_paper_scissor_v2",
+      "name": "Rock Paper Scissors V2",
+      "description": "Enhanced version of rock paper scissors with better UI",
+      "category": "Web Apps",
+      "tags": ["javascript", "game", "interactive", "ui"],
+      "path": "/projects/rock_paper_scissor_v2/",
+      "icon": "hand",
+      "featured": false
+    },
+    {
+      "id": "avin-recipies",
+      "name": "Avin Recipes",
+      "description": "Recipe website showcasing creative dishes",
+      "category": "Web Apps",
+      "tags": ["html", "css", "recipes", "website"],
+      "path": "/projects/avin-recipies/",
+      "icon": "chef",
+      "featured": false
+    },
+    {
+      "id": "odin-recipes",
+      "name": "Odin Recipes",
+      "description": "Recipe website from The Odin Project",
+      "category": "Web Apps",
+      "tags": ["html", "css", "recipes", "odin-project"],
+      "path": "/projects/odin-recipes/",
+      "icon": "chef",
+      "featured": false
+    },
+    {
+      "id": "avin-landing-page",
+      "name": "Avin Landing Page",
+      "description": "Landing page design for Fanciful Foods",
+      "category": "Web Apps",
+      "tags": ["html", "css", "landing-page", "design"],
+      "path": "/projects/avin-landing-page/",
+      "icon": "layout",
+      "featured": false
+    },
+    {
+      "id": "odin-landing-page",
+      "name": "Odin Landing Page",
+      "description": "Landing page project from The Odin Project",
+      "category": "Web Apps",
+      "tags": ["html", "css", "landing-page", "odin-project"],
+      "path": "/projects/odin-landing-page/",
+      "icon": "layout",
+      "featured": false
+    }
+  ],
+  "categories": [
+    {
+      "id": "threejs-animations",
+      "name": "Three.js Animations",
+      "displayName": "Animations",
+      "description": "Dynamic 3D animations and particle effects",
+      "color": "#ff6b6b"
+    },
+    {
+      "id": "threejs-simulations",
+      "name": "Three.js Simulations",
+      "displayName": "Simulations",
+      "description": "Interactive physics simulations and games",
+      "color": "#4ecdc4"
+    },
+    {
+      "id": "threejs-models",
+      "name": "Three.js Models",
+      "displayName": "3D Models",
+      "description": "3D model viewers and showcases",
+      "color": "#95e1d3"
+    },
+    {
+      "id": "threejs-shaders",
+      "name": "Three.js Shaders",
+      "displayName": "Shaders",
+      "description": "Custom shader effects and materials",
+      "color": "#f38181"
+    },
+    {
+      "id": "web-apps",
+      "name": "Web Apps",
+      "displayName": "Web Apps",
+      "description": "Vanilla JavaScript web applications",
+      "color": "#aa96da"
+    }
+  ]
+}

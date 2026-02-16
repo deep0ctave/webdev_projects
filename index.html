@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avinash's Portfolio - Web Projects</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .header h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+        }
+
+        .controls {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .category-btn {
+            padding: 0.8rem 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 30px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .category-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .category-btn.active {
+            background: rgba(255, 255, 255, 0.9);
+            color: #667eea;
+            border-color: #fff;
+        }
+
+        .project-count {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+
+        .card-header {
+            padding: 2rem;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .card-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-category {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            color: #333;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-description {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+            color: #555;
+            flex-grow: 1;
+        }
+
+        .card-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .tag {
+            background: #f0f0f0;
+            color: #667eea;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .featured-badge {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 5rem;
+            font-size: 1.5rem;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top-color: #fff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .header p {
+                font-size: 1.1rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚀 Avinash's Portfolio</h1>
+            <p>A collection of Three.js projects and web applications</p>
+        </div>
+
+        <div class="controls" id="controls">
+            <!-- Category buttons will be inserted here -->
+        </div>
+
+        <div class="project-count" id="project-count">
+            Loading projects...
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading amazing projects...</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Icon map
+        const iconMap = {
+            'sparkles': '✨',
+            'atom': '⚛️',
+            'play': '▶️',
+            'door': '🚪',
+            'fox': '🦊',
+            'galaxy': '🌌',
+            'house': '🏚️',
+            'cube': '🧊',
+            'game': '🎮',
+            'text': '📝',
+            'wave': '🌊',
+            'briefcase': '💼',
+            'water': '💧',
+            'box': '📦',
+            'scroll': '📜',
+            'scene': '🎬',
+            'temple': '⛩️',
+            'calculator': '🔢',
+            'pencil': '✏️',
+            'hand': '✊',
+            'chef': '👨‍🍳',
+            'layout': '📄'
+        };
+
+        let projectsData = [];
+        let currentFilter = 'all';
+
+        // Load projects
+        async function loadProjects() {
+            try {
+                const response = await fetch('/data/projects.json');
+                const data = await response.json();
+                projectsData = data.projects;
+                
+                createCategoryButtons();
+                displayProjects();
+            } catch (error) {
+                console.error('Error loading projects:', error);
+                document.getElementById('projects-grid').innerHTML = 
+                    '<div class="loading"><p>Error loading projects. Please refresh.</p></div>';
+            }
+        }
+
+        // Create category buttons
+        function createCategoryButtons() {
+            const controls = document.getElementById('controls');
+            const categories = [
+                { name: 'All Projects', value: 'all' },
+                { name: 'Animations', value: 'Three.js Animations' },
+                { name: 'Simulations', value: 'Three.js Simulations' },
+                { name: '3D Models', value: 'Three.js Models' },
+                { name: 'Shaders', value: 'Three.js Shaders' },
+                { name: 'Web Apps', value: 'Web Apps' }
+            ];
+
+            controls.innerHTML = categories.map(cat => `
+                <button class="category-btn ${cat.value === 'all' ? 'active' : ''}" 
+                        data-category="${cat.value}">
+                    ${cat.name}
+                </button>
+            `).join('');
+
+            // Add click handlers
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    currentFilter = btn.dataset.category;
+                    displayProjects();
+                });
+            });
+        }
+
+        // Display projects
+        function displayProjects() {
+            const filteredProjects = currentFilter === 'all' 
+                ? projectsData 
+                : projectsData.filter(p => p.category === currentFilter);
+
+            const grid = document.getElementById('projects-grid');
+            
+            if (filteredProjects.length === 0) {
+                grid.innerHTML = '<div class="loading"><p>No projects found</p></div>';
+                return;
+            }
+
+            grid.innerHTML = filteredProjects.map(project => {
+                const icon = iconMap[project.icon] || '⚡';
+                return `
+                    <div class="project-card" onclick="window.location.href='${project.path}'">
+                        <div class="card-header">
+                            <div class="card-icon">${icon}</div>
+                            <div class="card-title">${project.name}</div>
+                            <div class="card-category">${project.category.replace('Three.js ', '')}</div>
+                        </div>
+                        <div class="card-body">
+                            ${project.featured ? '<div class="featured-badge">⭐ FEATURED</div>' : ''}
+                            <div class="card-description">${project.description}</div>
+                            <div class="card-tags">
+                                ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            // Update count
+            document.getElementById('project-count').textContent = 
+                `Showing ${filteredProjects.length} project${filteredProjects.length !== 1 ? 's' : ''}`;
+        }
+
+        // Initialize
+        loadProjects();
+    </script>
+</body>
+</html>

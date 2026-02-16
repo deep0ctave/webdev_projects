@@ -1,0 +1,18 @@
+{
+  "name": "avinash-portfolio",
+  "version": "1.0.0",
+  "description": "Interactive 3D portfolio showcasing Three.js projects and web applications",
+  "scripts": {
+    "start": "npx serve -l 8000",
+    "serve": "npx serve",
+    "dev": "npx serve -l 8000"
+  },
+  "keywords": [
+    "threejs",
+    "portfolio",
+    "3d",
+    "webgl"
+  ],
+  "author": "Avinash",
+  "license": "MIT"
+}
