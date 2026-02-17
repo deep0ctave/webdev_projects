@@ -259,6 +259,26 @@
       "path": "/webdev_projects/projects/odin-landing-page/",
       "icon": "layout",
       "featured": false
+    },
+    {
+      "id": "vora",
+      "name": "Vora",
+      "description": "React application built with Vite",
+      "category": "Web Apps",
+      "tags": ["react", "vite", "modern", "spa"],
+      "path": "/webdev_projects/projects/vora/",
+      "icon": "layout",
+      "featured": false
+    },
+    {
+      "id": "portfolio_v2",
+      "name": "Portfolio V2",
+      "description": "Interactive 3D portfolio using React Three Fiber",
+      "category": "Three.js Models",
+      "tags": ["react", "r3f", "portfolio", "3d"],
+      "path": "/webdev_projects/projects/portfolio_v2/",
+      "icon": "briefcase",
+      "featured": true
     }
   ],
   "categories": [
